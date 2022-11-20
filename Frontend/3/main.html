@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <title>당신의 두발은 건강하신가요?</title>
+    <meta charset="UTF-8" />
+    <script defer src="src/drag_and_drop.js"></script>
+  </head>
+  <body>
+
+    <div id="drop-area">
+      <link rel="stylesheet" href="drop-area.css">
+      <form class="my-drag-form">
+        <p>이미지 파일 업로드</p>
+        <!-- 
+        <input type="file" id="fileElem" multiple accept="image/*" 
+        onchange="handleFiles(this.files)"> 
+        -->
+        <input type="file" id="fileElem"  accept="image/*" 
+        onchange="handleFile(this.file)">
+        <label class="button" for="fileElem">select some files</label>
+      </form>
+      <progress id="progress-bar" max=100 value=0></progress>
+      <div id="gallery"></div>
+    </div>
+    
+  </body>
+</html>
