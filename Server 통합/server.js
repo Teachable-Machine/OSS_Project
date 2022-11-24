@@ -10,13 +10,20 @@ app.use(fileUpload());
 app.use(express.static('public'));
 
 app.get('/', function(req,res) {
-    fs.readFile('main.html',function(error,data){
+    fs.readFile('start.html',function(error,data){
         res.writeHead(200,{'Content-Type':'text/html'});
         res.end(data);
     });
 });
 
-app.get('/information',function(req,res){
+app.get('/main2.js',function(req,res){
+    fs.readFile('main2.html',function(error,data){
+        res.writeHead(200,{'Content-Type':'text/html'});
+        res.end(data);
+    });
+});
+
+app.get('/information.js',function(req,res){
     fs.readFile('information.html',function(error,data){
         res.writeHead(200,{'Content-Type':'text/html'});
         res.end(data);
