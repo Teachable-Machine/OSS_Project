@@ -27,18 +27,18 @@
         function returnMaxValue(){
             return localStorage.getItem('maxvalue')
         }
-    </script>
+    </script> 
     <body>
         <h1>-상세정보</h1>
         <h3>* 당신은 탈모 <td>
             <script>
-                document.write(returnMaxValue())
+                document.write(returnMaxValue()) 
             </script>
-        </td>단계입니다.<br><!--이후 내용은 태그를 따로 설정하여 만들어야 할 것으로 보임--></h3><!--x부분 또한 티쳐블머신에서 가장 높은 비율의 단계 선정해서 넣어야 함.-->
-        <h2>-분류 결과<br> 
+        </td>단계입니다.<br></h3>
+        <h2>-분류 결과<br>  
             1단계: <td>
                 <script>
-                    document.write(returnPercentage(1))
+                    document.write(returnPercentage(1)) //굳이 4단계 다 hardcoding 할필요 없긴 한데 확실하게 호출하게 일단 이렇게 해놨음
                 </script>
             </td>% <br> 
             2단계: <td>
@@ -55,7 +55,7 @@
                 <script>
                     document.write(returnPercentage(4))
                 </script>
-            </td>%</h2><br> <!--각 단계 %의 경우, js파일에서 가져와야 함. 태그 필요.-->
+            </td>%</h2><br>
         <h3>-탈모인 추천영상</h3>
         <iframe width="300" height="200" src="https://www.youtube.com/embed/t_nRDuFdGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="300" height="200" src="https://www.youtube.com/embed/xgvckGs6xhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

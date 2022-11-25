@@ -92,7 +92,7 @@
                             if(prediction[i].probability.toFixed(2)*100>JSON.parse(localStorage.getItem('maxvalue'))){
                                 localStorage.setItem('maxvalue',JSON.stringify(i+1))
                             }
-                            localStorage.setItem(JSON.stringify(i+1),JSON.stringify(prediction[i].probability.toFixed(2)*100))
+                            localStorage.setItem(JSON.stringify(i+1),JSON.stringify(prediction[i].probability.toFixed(2)*100)) //이따 호출하기 편하게 i+1값으로 key값 설정해줌
                         labelContainer.childNodes[i].innerHTML = classPrediction;
                     }
                 }
