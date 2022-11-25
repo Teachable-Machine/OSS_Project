@@ -1,6 +1,8 @@
 
 // target division 설정, drop-area
 let dropArea = document.getElementById('drop-area');
+let startButton = document.getElementById('init_teachable_machine');
+startButton.classList.add('disable');
 
 // add event listerner to each event
 ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
@@ -52,15 +54,6 @@ function handleFile(file) {
   uploadFile(file);
   previewFile(file);
 }
-/*
-// function for handling multiple files
-function handleFiles(files) {
-  files = [...files] // convert FileList files to array
-  initializeProgress(files.length); // progress bar
-  files.forEach(uploadFile) // upload multiple files 
-  files.forEach(previewFile) // show preview of uploaded files 
-}
-*/
 /////////////////////////////////////////////////////////////////
 
 /* sending data to server */
@@ -123,4 +116,10 @@ function initializeProgress(numfiles) {
 function progressDone() {
   filesDone++
   progressBar.value = filesDone / filesToDo * 100
+  btnActive(); // 예측 시작 button 활성화
+}
+
+// 버튼 활성화
+function btnActive()  {
+  startButton.classList.remove('disable');
 }

@@ -3,26 +3,28 @@
   <head>
     <title>인공지능 탈모 판별기</title>
     <meta charset="UTF-8" />
+    <script defer src="src/drag_and_drop.js"></script>
   </head>
   <body>
     <main>
       <h1 style="text-align:center;">인공지능 탈모판별기</h1>
       <h2 style="text-align:center;">당신의 모발 건강을 알아보세요… 이미 늦었을지도?</h2>
+      <!-- 파일 업로드 -->
       <div id="drop-area">
-        <script src="src/drag_and_drop.js"></script>
         <link rel="stylesheet" href="style/drop-area.css">
         <form class="my-drag-form">
           <p style ="font-size: 20px;">이미지 파일 업로드</p>
-          <!-- 
-          <input type="file" id="fileElem" multiple accept="image/*" 
-          onchange="handleFiles(this.files)"> 
-          -->
           <input type="file" id="fileElem"  accept="image/*" 
           onchange="handleFile(this.file)">
           <label class="button" for="fileElem">select a image file</label>
         </form>
         <progress id="progress-bar" max=100 value=0></progress>
         <div id="gallery"></div>
+      </div>
+      <!-- 예측 시작 버튼 -->
+      <div id="init_teachable_machine">
+        <link rel="stylesheet" href="style/start_button.css">
+        <label class="stbutton" onclick ="location.href='result.html'">예측 시작하기</label>
       </div>
     </main>
         
