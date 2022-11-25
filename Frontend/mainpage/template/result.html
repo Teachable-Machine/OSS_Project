@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <title>결과</title>
+    <meta charset="UTF-8" />
+    <script defer src="../src/result.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align:center;">측정 결과</h1>
+    <h2 style="text-align:center;">당신의 모발은... </h2>
+    <!-- 분류 결과에 따라 다른 결과를 출력-->
+    <div class ="result">
+      <link rel="stylesheet" href="../style/result.css">
+      <img id ="result-image" src =""></div>
+      <p id="result-message" style ="font-size: 20px;"></p>
+    </div>
+    
+    <!-- 다른 이미지로 분류 재시도 -->
+    <div id="retry">
+      <link rel="stylesheet" href="../style/retry_button.css">
+      <label class="rbutton" onclick ="location.href='main.html'">Retry</label>    
+    </div>
+    
+    <!-- 상세 결과창으로 이동 -->
+    <div id="more-detail">
+      <link rel="stylesheet" href="../style/detail_button.css">
+      <label class="dbutton" onclick ="location.href='../template/information.html'">상세 결과 보기</label>
+    </div>
+
+    <!-- sns로 공유 -->
+    <div id="sharing-sns">
+      <link rel="stylesheet" href="../style/sns_button.css">
+      <label class="sbutton" onclick ="">SNS로 공유하기</label>
+    </div>
+    
+    
+  </body>
+</html>

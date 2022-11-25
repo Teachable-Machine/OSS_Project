@@ -46,19 +46,19 @@ function setResultImage(level){
   $img = document.querySelector(".result > img"); 
   switch (level){
     case 1:
-      $img.src = 'test.jpg'; 
+      $img.src = '../static/test.jpg'; 
       break;
     case 2:
-      $img.src = 'test2.jpg';
+      $img.src = '../static/test2.jpg';
       break;
     case 3:
-      $img.src = 'test3.jpg';
+      $img.src = '../static/test3.jpg';
       break;
     case 4:
-      $img.src = 'test4.jpg';
+      $img.src = '../static/test4.jpg';
       break;
     default:
-      $img.src = 'loading_image.jfif';
+      $img.src = '../static/loading_image.jfif';
       break;
   }
 }
