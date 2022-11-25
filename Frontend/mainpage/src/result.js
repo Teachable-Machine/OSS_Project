@@ -1,18 +1,30 @@
-
-window.addEventListener('DOMContentLoaded', setResult, false);
-
 // get level data from server //////////
-let level = 3;
+let level = 0;
 /////////////////////////////////////////////////
 
+// custom event that called after classification.
+
+// add event listener
+window.addEventListener('custom_event', setResult, false);
+
+// disable all buttons
+let retryButton = document.getElementById('retry');
+let detailButton = document.getElementById('more-detail');
+let snsButton = document.getElementById('sharing-sns');
+retryButton.classList.add('rdisable');
+detailButton.classList.add('ddisable');
+snsButton.classList.add('sdisable');
+
+// 결과 출력 이벤트 핸들러
+// 분류 결과 획득한 level값(탈모 단계)를 인자로 받음
 function setResult(){
   setResultImage(level);
   setResultMessage(level);
+  enableAllButtons();
 }
 
 function setResultImage(level){
   $img = document.querySelector(".result > img"); 
-  let result_image = document.getElementById("result-image").src;
   switch (level){
     case 1:
       $img.src = 'test.jpg'; 
@@ -25,7 +37,7 @@ function setResultImage(level){
       break;
     case 4:
       $img.src = 'test4.jpg';
-      break; 
+      break;
   }
 
 }
@@ -48,4 +60,10 @@ function setResultMessage(level){
   }
   document.getElementById("result-message").innerHTML = text;
 
+}
+
+function enableAllButtons(){
+  retryButton.classList.remove('rdisable');
+  detailButton.classList.remove('ddisable');
+  snsButton.classList.remove('sdisable');
 }

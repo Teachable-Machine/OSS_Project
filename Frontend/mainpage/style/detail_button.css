@@ -14,6 +14,9 @@
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+#more-detail.ddisable {
+  pointer-events: none;
+}
 
 .dbutton:hover {
   background: #ddd;
