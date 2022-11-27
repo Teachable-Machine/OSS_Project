@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <style>
+            h1{
+                font-family: 맑은 고딕;
+                font-size: 30px;
+                text-align: start;
+            }
+            h2{
+                font-family: 맑은 고딕;
+                font-size: 25px;
+                text-align: start;
+            }
+            h3{
+                font-family: 맑은 고딕;
+                font-size: 20px;
+                text-align: start;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>-상세정보</h1>
+        <h3>* 당신은 탈모 <td>
+            <script>
+                document.write(localStorage.getItem('maxKey')) 
+            </script>
+        </td>단계입니다.<br></h3>
+        <h2>-분류 결과<br>  
+            1단계: <td>
+                <script>
+                    document.write(localStorage.getItem(JSON.stringify(1))) //굳이 4단계 다 hardcoding 할필요 없긴 한데 확실하게 호출하게 일단 이렇게 해놨음
+                </script>
+            </td>% <br> 
+            2단계: <td>
+                <script>
+                    document.write(localStorage.getItem(JSON.stringify(2)))
+                </script>
+            </td>% <br> 
+            3단계: <td>
+                <script>
+                    document.write(localStorage.getItem(JSON.stringify(3)))
+                </script>
+            </td>% <br> 
+            4단계: <td>
+                <script>
+                    document.write(localStorage.getItem(JSON.stringify(4)))
+                </script>
+            </td>%</h2><br>
+        <h3>-탈모인 추천영상</h3>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/t_nRDuFdGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/xgvckGs6xhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/aLOEVbNko9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>

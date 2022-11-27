@@ -1,0 +1,23 @@
+
+.dbutton {
+  text-align: center;
+  display:block;
+  width:10vw;
+
+  position: absolute;
+  top: 40vw;
+  left: 43vw;
+  
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#more-detail.ddisable {
+  pointer-events: none;
+}
+
+.dbutton:hover {
+  background: #ddd;
+}
