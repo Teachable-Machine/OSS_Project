@@ -24,6 +24,10 @@ app.get('/information',function(req,res){
     res.sendFile(path.join(__dirname, '/template/information.html'));
 });
 
+app.get('/SNS',function(req,res){
+    res.sendFile(path.join(__dirname, '/template/SNS.html'));
+});
+
 app.use(
     fileUpload({
         limits: {
