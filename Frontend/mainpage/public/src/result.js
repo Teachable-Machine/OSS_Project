@@ -62,16 +62,16 @@ function setResultMessage(level){
   var text = "";
   switch (level){
     case 1:
-      text = "가망이 없습니다… 파이팅!";
+      text = "풍성합니다!!";
       break;
     case 2:
-      text = "함락 직전입니다. 자라나라 머리머리!";
-      break;
-    case 3:
       text = "탈모가 시작되었습니다. 전투를 준비하세요!";
       break;
+    case 3:
+      text = "함락 직전입니다. 자라나라 머리머리!";
+      break;
     case 4:
-      text = "풍성합니다!!!";
+      text = "가망이 없습니다… 파이팅!";
       break; 
     default:
       text = "로딩 중입니다.";
