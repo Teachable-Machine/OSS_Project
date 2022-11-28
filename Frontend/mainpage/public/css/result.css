@@ -1,5 +1,7 @@
 
 img {
+  margin-left: auto;
+  margin-right: auto;
   height: 20vw;
   margin: 0px 39vw;
 }
@@ -9,4 +11,11 @@ p {
   text-align: center;
   width: 30vw;
   margin: 2vw auto auto auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 25%;
 }
