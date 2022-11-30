@@ -14,7 +14,7 @@ window.addEventListener('FinishClassificaion', setResult, false);
 /////////////////////// teachable machine 종료 후 호출될 사용자 정의 이벤트 /////////////////////////
 /*
 // 분류를 종료한 후, 다음과 같이 이벤트를 정의할것
-export let ClassifyDone = new CustomEvent("FinishClassificaion",
+let ClassifyDone = new CustomEvent("FinishClassificaion",
   {
     'detail': {level: 분류결과값} // 여기에 local repository에 저장된 분류 결과값(1,2,3,4)을 할당.
                                   // 이벤트 호출 전 반드시 값을 변경해줄것.
@@ -24,6 +24,7 @@ export let ClassifyDone = new CustomEvent("FinishClassificaion",
 // window.dispatchEvent(ClassifyDone);
 */
 // 테스트
+// setTimeout함수를 이용하여 3초간 대기 후 실행하도록 구현
 let mytest;
 setTimeout(function () {
   mytest = new CustomEvent("FinishClassificaion",

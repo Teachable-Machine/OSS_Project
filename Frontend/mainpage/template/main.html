@@ -15,7 +15,7 @@
         <form class="my-drag-form">
           <p style ="font-size: 20px;">이미지 파일 업로드</p>
           <input type="file" id="fileElem"  accept="image/*" 
-          onchange="handleFile(this.file)">
+          onchange="handleFiles(this.files)">
           <label class="button" for="fileElem">select a image file</label>
         </form>
         <progress id="progress-bar" max=100 value=0></progress>

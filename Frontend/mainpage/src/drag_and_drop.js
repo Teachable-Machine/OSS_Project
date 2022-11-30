@@ -39,57 +39,23 @@ function unhighlight(e) {
 
 function handleDrop(e) {
   let dt = e.dataTransfer // get dropped data from event?
+  let files = dt.files 
+  const fileInput = document.querySelector('input[id="fileElem"]');
+  fileInput.files = files;
 
-  // one file
-  let file = dt.file 
-  handleFile(file); // onchange handler
-
-  // multiple file, FileList
-  //let files = dt.files 
-  //handleFiles(files) // onchange handler
+  handleFiles(files);
 }
 // function to handle a file
-function handleFile(file) { 
-  initializeProgress(1);
-  uploadFile(file);
-  previewFile(file);
+function handleFiles(files) {
+  files = [...files]
+  initializeProgress(files.length)
+  files.forEach(previewFile)
 }
-/////////////////////////////////////////////////////////////////
-
-/* sending data to server */
-function uploadFile(file) {
-  let url = 'YOUR URL HERE' // to be assigned later
-  
-  // FormData()
-  // built-in browser api
-  // creating form data to be sended to server
-  let formData = new FormData()
-
-  formData.append('file', file)
-
-  /*
-  // window.fetch( url, option object )
-  // HTTP communication, browser api
-  // send data to server
-  // return promise object
-
-  // example
-  fetch(url, options)
-  .then((response) => console.log("response:", response))
-  .catch((error) => console.log("error:", error));
-  */
-  fetch(url, { 
-    method: 'POST',
-    body: formData
-  }) 
-  //.then(() => { /* Done. Inform the user */ })
-  .then(progressDone) // show progress through progress bar
-  .catch(() => { /* Error. Inform the user */ })
-}
-
-///////////////////////////////////////////////////////////////
 
 // Additional Features
+let filesDone = 0
+let filesToDo = 0
+let progressBar = document.getElementById('progress-bar')
 
 // show preview of the uploaded file 
 function previewFile(file) {
@@ -100,13 +66,9 @@ function previewFile(file) {
     img.src = reader.result
     document.getElementById('gallery').appendChild(img)
   }
+  progressDone();
 }
 
-// Progress bar, show progress of uploading
-let filesDone = 0
-let filesToDo = 0 
-let progressBar = document.getElementById('progress-bar')
-// start uploading, call initializeProgress
 function initializeProgress(numfiles) {
   progressBar.value = 0
   filesDone = 0
