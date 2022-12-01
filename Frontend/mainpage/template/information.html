@@ -3,31 +3,62 @@
     <head> 
         <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
         <style>
+            @import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css); /*구글 웹폰트 적용*/
+            html{
+                font-family: 'KoPub Batang', serif;/*웹 폰트 지정*/
+            }
+            body{
+                text-align: center;
+                padding-top:75px;
+            }
             h1{
-                font-family: 맑은 고딕;
                 font-size: 30px;
-                text-align: start;
+                padding:30px;
             }
             h2{
-                font-family: 맑은 고딕;
                 font-size: 25px;
-                text-align: start;
             }
             h3{
-                font-family: 맑은 고딕;
                 font-size: 20px;
-                text-align: start;
             }
+            .canvas-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                
+                height: 50px;
+                padding: 1rem;
+                color: white;
+                background: black;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
         </style>
     </head>
+    <header>
+        <h2> 탈모 측정기 </h2>
+    </header>
     <body>
-        <h1>-상세정보</h1>
-        <h3>* 당신은 탈모 <td>
-            <script>
-                document.write(localStorage.getItem('maxKey')) 
-            </script>
+        <h1>상세정보</h1>
+        <h3>당신은 탈모 <td>
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script>document.write(localStorage.getItem('maxKey'));</script>
         </td>단계입니다.<br></h3>
-        <h2>-분류 결과<br>  
+            <div class="canvas-container">
+                <canvas id="pie-chart" style="height:500px; ", ></canvas>
+            </div>
+            <h3>
             1단계: <td>
                 <script>
                     document.write(localStorage.getItem(JSON.stringify(1))) //굳이 4단계 다 hardcoding 할필요 없긴 한데 확실하게 호출하게 일단 이렇게 해놨음
@@ -47,10 +78,38 @@
                 <script>
                     document.write(localStorage.getItem(JSON.stringify(4)))
                 </script>
-            </td>%</h2><br>
+            </td>%</h3><br>
         <h3>-탈모인 추천영상</h3>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/t_nRDuFdGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/xgvckGs6xhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/aLOEVbNko9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </body>
+        
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/5D3yu7ORjn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/Z60QzkT4wYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/sQfUOmnFEYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/56otLtIhAzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/qbfbOuTqUU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/PW5MiMs7SNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </body>
+        <script>
+            
+            new Chart(document.getElementById("pie-chart"), {
+                type: 'doughnut',
+                data: {
+                  labels: ["1단계", "2단계", "3단계", "4단계"],
+                  datasets: [{
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+                    data: [localStorage.getItem(JSON.stringify(1)),localStorage.getItem(JSON.stringify(2)),localStorage.getItem(JSON.stringify(3)),localStorage.getItem(JSON.stringify(4))]
+                  }]
+                },
+                options: {
+                  responsive: false,
+                  title: {
+                    display: true,
+                    text: "각 탈모 단계로 판명될 확률"
+                  }
+                }
+            });
+            
+        </script>
 </html>
