@@ -1,0 +1,51 @@
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  height: 20vw;
+  width: 40vw;
+  font-family: sans-serif;
+  margin: 10vw auto 40vw auto;
+  padding: auto auto;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+p { 
+  text-align: center;
+  width: 20vw;
+  margin: 5vw auto auto auto;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 20%;
+  margin: auto;
+  display: block; 
+}
+.button {
+  text-align: center;
+  display:block;
+  width:200px;
+  margin:auto;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+progress {
+  width: 20vw;
+  height: 30px;
+  margin: auto 10vw;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
