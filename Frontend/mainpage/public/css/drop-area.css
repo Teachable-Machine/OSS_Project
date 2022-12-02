@@ -2,7 +2,7 @@
 #drop-area {
   border: 2px dashed #ccc;
   border-radius: 20px;
-  height: 20vw;
+  height: 40%;
   width: 40vw;
   font-family: sans-serif;
   margin: 10vw auto 40vw auto;
@@ -23,10 +23,9 @@ p {
   margin-top: 10px;
 }
 #gallery img {
-  width: 10vw;
-  margin-bottom: 10vw;
-  margin-right: 10vw;
-  vertical-align: middle;
+  width: 20%;
+  margin: auto;
+  display: block; 
 }
 .button {
   text-align: center;

@@ -22,7 +22,7 @@ setTimeout(function () {
     'detail': {level: JSON.parse(localStorage.getItem('maxKey'))}
   });
   window.dispatchEvent(mytest); // 비동기적 실행에 주의할것
-}, 3000);
+}, 0);
 
 // 다음과 같이 이벤트를 호출할것 
 
@@ -41,16 +41,16 @@ function setResultImage(level){
   $img = document.querySelector(".result > img"); 
   switch (level){
     case 1:
-      $img.src = '/static/test.jpg'; 
+      $img.src = '/static/rank1.jpg'; 
       break;
     case 2:
-      $img.src = '/static/test2.jpg';
+      $img.src = '/static/rank2.jpg';
       break;
     case 3:
-      $img.src = '/static/test3.jpg';
+      $img.src = '/static/rank3.jpg';
       break;
     case 4:
-      $img.src = '/static/test4.jpg';
+      $img.src = '/static/rank4.jpg';
       break;
     default:
       $img.src = '/static/loading_image.jfif';
