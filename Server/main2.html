@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <body>
+            <div>Teachable Machine Image Model</div>
+            <progress id="progress-bar" max=100 value=0></progress>
+            <button type="button" onclick="init(); show_detail_button();">예측</button>
+            <script
+                class="jsbin"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+            ></script>
+
+
+        <div id="drop-area">
+            <link rel="stylesheet" href="drop-area.css">
+            <div class="file-upload">
+                <div class="image-upload-wrap">
+                    <input
+                        class="file-upload-input"
+                        type="file"
+                        onchange="handleFile(this.file); readURL(this);"
+                        accept="image/*"
+                    />
+                </div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+                </div>
+            </div>
+        </div>
+            <div id="detail-button-container"></div>
+            <div id="waiting-container"></div>
+            <div id="label-container"></div>
+            <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+            <script>
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+     
+                        reader.onload = function (e) {
+                            $('.image-upload-wrap').hide();
+     
+                            $('.file-upload-image').attr('src', e.target.result);
+                            $('.file-upload-content').show();
+     
+                            $('.image-title').html(input.files[0].name);
+                        };
+     
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+            </script>
+     
+            <script type="text/javascript">
+                const URL = 'https://teachablemachine.withgoogle.com/models/xSlX5fFwo/';
+     
+                let model, labelContainer, maxPredictions;
+     
+                async function init() {
+                    const modelURL = URL + 'model.json';
+                    const metadataURL = URL + 'metadata.json';
+                    let waiting_container=document.getElementById('waiting-container');
+                    waiting_container.innerHTML='<h3> 탈모 정도를 측정중입니다... 잠시 기다려주세요</h3>';
+                    model = await tmImage.load(modelURL, metadataURL);
+                    maxPredictions = model.getTotalClasses();
+     
+                    labelContainer = document.getElementById('label-container');
+                    for (let i = 0; i < maxPredictions; i++) {
+                        // and class labels
+                        labelContainer.appendChild(document.createElement('div'));
+                    }
+
+                    var image = document.getElementById('face-image');
+                    console.log("Start predicting");
+                    const prediction = await model.predict(image, false);
+                    waiting_container.innerHTML=''
+                    // 상세보기 버튼 보여주기
+                    for (let i = 0; i < maxPredictions; i++) {
+                        const classPrediction =
+                            prediction[i].className + ': ' + prediction[i].probability.toFixed(2)*100 + "%";
+                            //labelContainer.childNodes[i].innerHTML = classPrediction;
+                    }
+                }
+                function movepage(){
+                    location.href = "/information.js";
+                }
+                function show_detail_button(){
+                        let detail_button_container=document.getElementById('detail-button-container')
+                        detail_button_container.innerHTML='<input type = "button" value = "상세정보 보기" onclick  = "movepage()"/>'
+                }
+            
+            </script>
+        </body>
+
+    </body>
+</html>
