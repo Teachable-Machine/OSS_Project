@@ -64,6 +64,7 @@ function previewFile(file) {
   reader.onloadend = function() {
     let img = document.createElement('img')
     img.src = reader.result
+    img.id = 'face'
     document.getElementById('gallery').appendChild(img)
   }
   progressDone();
