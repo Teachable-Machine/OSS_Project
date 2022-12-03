@@ -22,7 +22,7 @@ setTimeout(function () {
     'detail': {level: JSON.parse(localStorage.getItem('maxKey'))}
   });
   window.dispatchEvent(mytest); // 비동기적 실행에 주의할것
-}, 3000);
+}, 10);
 
 // 다음과 같이 이벤트를 호출할것 
 

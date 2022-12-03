@@ -1,0 +1,39 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css); /*구글 웹폰트 적용*/
+            html{
+                font-family: 'KoPub Batang', serif;/*웹 폰트 지정*/
+            }
+            body{
+                text-align: center;
+                padding-top:75px;
+            }
+            h1{
+                font-size: 30px;
+                padding:30px;
+            }
+            h2{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            .canvas-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                
+                height: 50px;
+                padding: 1rem;
+                color: white;
+                background: black;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
