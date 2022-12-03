@@ -22,7 +22,7 @@ function returnPercentage(num1){ //단계별 %값 가져오기
     return localStorage.getItem('maxKey')
   }
 async function init() {
-    const URL = 'https://teachablemachine.withgoogle.com/models/xSlX5fFwo/';
+    const URL = 'https://teachablemachine.withgoogle.com/models/f33RB5bma/';
      
     let model, labelContainer, maxPredictions;
     const modelURL = URL + 'model.json';

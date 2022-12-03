@@ -38,7 +38,7 @@ app.use(
 );
 var server = http.createServer(function(request,response){
     console.log('start log');
-});
+});6
 
 app.post('/upload', (req, res) => {
     const { image } = req.files;
