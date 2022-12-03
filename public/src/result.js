@@ -47,7 +47,7 @@ function setResultImage(level){
       $img.src = '/static/rank2.jpg';
       break;
     case 3:
-      $img.src = '/static/rank3.jpg';
+      $img.src = '/static/rank3.jfif';
       break;
     case 4:
       $img.src = '/static/rank4.jpg';
