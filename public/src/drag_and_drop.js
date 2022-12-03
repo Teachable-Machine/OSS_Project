@@ -59,14 +59,18 @@ let progressBar = document.getElementById('progress-bar')
 
 // show preview of the uploaded file 
 function previewFile(file) {
+  if(localStorage.getItem('test')=='1'){
   let reader = new FileReader()
   reader.readAsDataURL(file) // get uploaded data from url
   reader.onloadend = function() {
     let img = document.createElement('img')
     img.src = reader.result
+    img.id = 'face'
     document.getElementById('gallery').appendChild(img)
+    progressDone();
   }
-  progressDone();
+  localStorage.setItem('test','2')
+}
 }
 
 function initializeProgress(numfiles) {

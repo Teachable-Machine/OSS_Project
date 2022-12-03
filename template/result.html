@@ -3,12 +3,8 @@
   <head>
     <title>결과</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/css/default.css">
     <script defer src="/src/result.js"></script>
   </head>
-  <header>
-    <h2> 탈모 측정기 </h2>
-</header>
   <body>
     <h1 style="text-align:center;">측정 결과</h1>
     <h2 style="text-align:center;">당신의 모발은... <td>
@@ -39,7 +35,7 @@
     <!-- sns로 공유 -->
     <div id="sharing-sns">
       <link rel="stylesheet" href="/css/sns_button.css">
-      <label class="sbutton" onclick ="location.href='/SNS'">SNS로 공유하기</label>
+      <label class="sbutton" onclick="window.open('/SNS', 'window_name', 'width=400, height=200, location=no, status=no, scrollbars=yes');">SNS로 공유하기</label>
     </div>
   </body>
 </html>
