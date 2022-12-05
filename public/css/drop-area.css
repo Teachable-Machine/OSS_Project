@@ -1,5 +1,6 @@
-
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
 #drop-area {
+  font-family: 'KoPub Batang', serif;
   border: 2px dashed #ccc;
   border-radius: 20px;
   height: 40%;

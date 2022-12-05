@@ -1,4 +1,6 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
 .stbutton {
+  font-family: 'KoPub Batang', serif;
   text-align: center;
   display:block;
   width:10vw;
