@@ -37,3 +37,28 @@
                 justify-content: center;
                 align-items: center;
               }
+              #waiting-container{
+                  padding:auto;
+              }
+              
+              .elem{
+                  padding:15px;
+              }
+
+              footer{
+                left: 0;
+                right: 0;
+                
+                height: 70px;
+                padding: 2rem;
+                margin-top:5rem;
+                justify-content: center;
+                align-items: center;
+                background-color: gray;
+              }
+              .footer-span{
+                  display:inline-block;
+                  padding:0;
+                  margin:3px;
+                  text-align:center;
+              }

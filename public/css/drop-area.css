@@ -4,21 +4,13 @@
   border: 2px dashed #ccc;
   border-radius: 20px;
   height: 40%;
-  width: 40vw;
+  width: 30vw;
   font-family: sans-serif;
-  margin: 10vw auto 40vw auto;
-  padding: auto auto;
+  margin: 5vw auto 10vw auto;
+  padding: auto;
 }
 #drop-area.highlight {
   border-color: purple;
-}
-p { 
-  text-align: center;
-  width: 20vw;
-  margin: 5vw auto auto auto;
-}
-.my-form {
-  margin-bottom: 10px;
 }
 #gallery {
   margin-top: 10px;
@@ -31,18 +23,21 @@ p {
 .button {
   text-align: center;
   display:block;
-  width:200px;
-  margin:auto;
+  width:10vw;
+  margin:0 auto;
+  margin-top:50px;
+  margin-bottom:30px;
   padding: 10px;
   background: #ccc;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-family: 'KoPub Batang', serif;
 }
 progress {
-  width: 20vw;
-  height: 30px;
-  margin: auto 10vw;
+  width: 30vw;
+  height: 20px;
+  display:block;
 }
 .button:hover {
   background: #ddd;
