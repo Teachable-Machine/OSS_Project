@@ -7,7 +7,7 @@ const express = require('express');
 const fileUpload = require('express-fileupload');
 const exp = require('constants');
 const app = express();
-const port = 5001;
+const port =80;
 const router = express.Router();
 app.use(fileUpload());
 app.use(express.static(__dirname + '/public'));
@@ -49,5 +49,5 @@ app.post('/upload', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`running port 5001`);
+    console.log(`running port 80`);
 });
