@@ -82,12 +82,16 @@ function initializeProgress(numfiles) {
 function progressDone() {
   filesDone++
   progressBar.value = filesDone / filesToDo * 100
-  //btnActive(); // 예측 시작 button 활성화
+  btnActive(); // 예측 시작 button 활성화
 }
 
 // 버튼 활성화
-/*
+
 function btnActive()  {
-  startButton.classList.remove('disable');
-}
-*/
+  console.log("Activate button");
+  //startButton.classList.remove('disable');
+  $(".btn-container").append(`<div id="init_teachable_machine">
+      <link href="/css/start_button.css" rel="stylesheet"  type="text/css">
+      <label class="stbutton" onclick = "init()">예측 시작하기</label>
+    </div>`);
+};
