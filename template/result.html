@@ -4,40 +4,57 @@
     <title>결과</title>
     <meta charset="UTF-8" />
     <script defer src="/src/result.js"></script>
+    <link rel="stylesheet" href="/css/default.css">
   </head>
+    <header>
+      <h2> 탈모 측정기 </h2>
+  </header>
   <body>
-    <h1 style="text-align:center;">측정 결과</h1>
-    <h2 style="text-align:center;">당신의 모발은... <td>
+    <h1>측정 결과</h1>
+    <h2>당신의 모발은... 탈모 <td>
       <script>
           document.write(localStorage.getItem('maxKey')) 
       </script>
     </td>
-    단계입니다.<br></h2>
+    단계입니다<br></h2>
     <!-- 분류 결과에 따라 다른 결과를 출력-->
+
+    
     <div class ="result">
       <link rel="stylesheet" href="/css/result.css">
       <img id ="result-image" src ="/static/test.jpg" class = "center"></div>
       <p id="result-message" style ="font-size: 20px;"></p>
     </div>
+  <br><br><br><br>
     
     <!-- 다른 이미지로 분류 재시도 -->
-    <div id="retry">
+    <span class="elem" id="retry">
       <link rel="stylesheet" href="/css/retry_button.css">
       <label class="rbutton" onclick ="location.href='/'">Retry</label>    
-    </div>
+    </span>
     
     <!-- 상세 결과창으로 이동 -->
-    <div id="more-detail">
+    <span  class="elem"id="more-detail">
       <link rel="stylesheet" href="/css/detail_button.css">
       <label class="dbutton" onclick ="location.href='/information'">상세 결과 보기</label>
-    </div>
+    </span>
 
     <!-- sns로 공유 -->
-    <div id="sharing-sns">
+    <span  class="elem"id="sharing-sns">
       <link rel="stylesheet" href="/css/sns_button.css">
       <label class="sbutton" onclick="window.open('/SNS', 'window_name', 'width=400, height=200, location=no, status=no, scrollbars=yes');">SNS로 공유하기</label>
-    </div>
+    </span>
+
+    <footer>
+      <p>
+        <span class="footer-span">© Kyung Hee University 2022 Open Source Software Development</span><br>
+        <span class="footer-span">Github: https://github.com/Teachable-Machine/OSS_Project</span>
+      </p>
+  </footer>
   </body>
+
+
+  
 </html>
 <script type="text/javascript">
 function returnPercentage(num1){ //단계별 %값 가져오기

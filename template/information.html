@@ -20,35 +20,41 @@
             <h3>
             1단계: <td>
                 <script>
-                    document.write(localStorage.getItem(JSON.stringify(1))) //굳이 4단계 다 hardcoding 할필요 없긴 한데 확실하게 호출하게 일단 이렇게 해놨음
+                    document.write(parseInt(localStorage.getItem(JSON.stringify(1))))  //굳이 4단계 다 hardcoding 할필요 없긴 한데 확실하게 호출하게 일단 이렇게 해놨음
                 </script>
-            </td>% <br> 
+            </td>% <br> <br> 
             2단계: <td>
                 <script>
-                    document.write(localStorage.getItem(JSON.stringify(2)))
+                    document.write(parseInt(localStorage.getItem(JSON.stringify(2))))
                 </script>
-            </td>% <br> 
+            </td>% <br> <br> 
             3단계: <td>
                 <script>
-                    document.write(localStorage.getItem(JSON.stringify(3)))
+                    document.write(parseInt(localStorage.getItem(JSON.stringify(3))))
                 </script>
-            </td>% <br> 
+            </td>% <br><br> 
             4단계: <td>
                 <script>
-                    document.write(localStorage.getItem(JSON.stringify(4)))
+                    document.write(parseInt(localStorage.getItem(JSON.stringify(4))))
                 </script>
             </td>%</h3><br>
         <h3>-탈모인 추천영상</h3>
-        
             <iframe width="300" height="200" src="https://www.youtube.com/embed/5D3yu7ORjn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/Z60QzkT4wYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/sQfUOmnFEYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/56otLtIhAzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/qbfbOuTqUU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/9ap5t_dO0QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/PW5MiMs7SNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+            <br><br><br><br><br><br><br>
+            <footer>
+                <p>
+                    <span class="footer-span">© Kyung Hee University 2022 Open Source Software Development</span><br>
+                    <span class="footer-span">Github: https://github.com/Teachable-Machine/OSS_Project</span>
+                </p>
+            </footer>
         </body>
+      
         <script>
             
             new Chart(document.getElementById("pie-chart"), {
