@@ -24,17 +24,12 @@ function returnPercentage(num1){ //단계별 %값 가져오기
 async function init() {
     const URL = 'https://teachablemachine.withgoogle.com/models/f33RB5bma/';
      
-    let model, labelContainer, maxPredictions;
+    let model, maxPredictions;
     const modelURL = URL + 'model.json';
     const metadataURL = URL + 'metadata.json';
     model = await tmImage.load(modelURL, metadataURL);
     maxPredictions = model.getTotalClasses();
 
-    labelContainer = document.getElementById('label-container');
-    for (let i = 0; i < maxPredictions; i++) {
-        // and class labels
-        labelContainer.appendChild(document.createElement('div'));
-    }
     var image = document.getElementById('face-image');
     const prediction = await model.predict(image, false);
     localStorage.setItem('maxvalue','-1') //%값 maxvalue -1로 초기화
