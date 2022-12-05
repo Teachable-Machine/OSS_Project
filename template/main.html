@@ -86,12 +86,11 @@
     location.href='/result'
 }
 </script>
-<script type="module" src="/src/drag_and_drop.js"></script>
+<script type="module" src="/src/drag_and_drop.js?ver=2"></script>
 <script type="module" src="/src/functions.js?ver=2"></script>
 <script>
   
   function showButton() {
-    console.log("clicked!!")
     $(".btn-container").append(`<div id="init_teachable_machine">
       <link href="/css/start_button.css" rel="stylesheet"  type="text/css">
       <label class="stbutton" onclick = "init()">예측 시작하기</label>
