@@ -21,7 +21,7 @@
   Frontend: html5, css, 바닐라 js   
 
 ## Usage
-## 1.이미지 파일을 선택하여 업로드하거나 드래그한다.
+## 1.이미지 파일을 선택하여 업로드하거나 드래그한다.<http://34.197.91.77:5001/>
 ![image](https://user-images.githubusercontent.com/81818317/206405492-2299caae-7dd8-425e-b33e-4263e4d4c3c7.png)
 ## 2.이미지 업로드 진행중
 ![image](https://user-images.githubusercontent.com/81818317/206396591-3450cd52-92a9-46bb-8e5f-9e6e58b70028.png)
