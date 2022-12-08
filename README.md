@@ -2,9 +2,9 @@
 
 ### Contents
 1. About The Project
-2. Getting started(installation)
-3. Usage
-4. 구현 기술 스택 및 아키텍처
+2. 구현 기술 스택 및 아키텍처
+3. Getting started(installation)
+4. Usage
 5. Contributing
 6. Contact
 
@@ -12,6 +12,8 @@
 ## About The Project
   탈모에 대해 걱정이 많은 사람들을 위해 탈모의 진행정도를 보여주는 웹 페이지
 
+## 구현 기술 스택 및 아키텍처
+![image](https://user-images.githubusercontent.com/81818317/206395573-6fe0d0b6-00b8-4ef1-96ea-e9526e16923e.png)
 
 ## Getting Started(installation)
   Backend: Node.js, Amazon EC2   
@@ -35,12 +37,6 @@
 </div>
 
 
-
-
-
-
-## 구현 기술 스택 및 아키텍처
-![image](https://user-images.githubusercontent.com/81818317/206395573-6fe0d0b6-00b8-4ef1-96ea-e9526e16923e.png)
 
 
 
