@@ -14,11 +14,13 @@
 
 
 ## Getting Started(installation)
-  Backend: Node.js, Amazon EC2 
-  AI modeling: Teachable Machine
-  Frontend: html5, css, 바닐라 js
+  Backend: Node.js, Amazon EC2   
+  AI modeling: Teachable Machine   
+  Frontend: html5, css, 바닐라 js   
 
 ## Usage
+#  1.이미지 파일을 선택하여 업로드하거나 드래그한다.
+![image](https://user-images.githubusercontent.com/81818317/206395957-f946300e-35c8-4e5d-b54b-23e2e1ce2029.png)
 
 
 ## 구현 기술 스택 및 아키텍처
