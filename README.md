@@ -30,7 +30,7 @@
 ## 5. 상세결과 확인 
 <div>
 <img width = "300" src="https://user-images.githubusercontent.com/81818317/206401990-a65ed045-798c-4f3f-8614-ec255329af37.png">
-![image](https://user-images.githubusercontent.com/81818317/206402540-70748fe7-d618-41c7-926b-5382dac71b22.png)
+<img width = "200" src="https://user-images.githubusercontent.com/81818317/206402540-70748fe7-d618-41c7-926b-5382dac71b22.png">
 <img width = "300" src="https://user-images.githubusercontent.com/81818317/206400947-a8bf89e9-5ad9-4e1c-8c19-559400130561.png">
 </div>
 
