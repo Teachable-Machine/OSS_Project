@@ -28,9 +28,10 @@
 ## 4. SNS 결과 공유
 ![image](https://user-images.githubusercontent.com/81818317/206398640-c4b87c11-b837-4f87-a19a-7724c124eb29.png)
 ## 5. 상세결과 확인 
-![image](https://user-images.githubusercontent.com/81818317/206398924-8acc7508-3c7e-4c7b-91b1-655d392b066a.png)
-<img src="[![image](https://user-images.githubusercontent.com/81818317/206398924-8acc7508-3c7e-4c7b-91b1-655d392b066a.png))"  width="600" height="270">
-![image](https://user-images.githubusercontent.com/81818317/206398944-64888288-5ad3-40c6-aefd-beed20ad32d4.png)
+<div>
+<img width = "300" src="https://user-images.githubusercontent.com/81818317/206400906-76e15fae-6e8e-4e5e-aaf7-1bd45f28922f.png">
+<img width = "300" src="https://user-images.githubusercontent.com/81818317/206400947-a8bf89e9-5ad9-4e1c-8c19-559400130561.png">
+</div>
 
 
 
