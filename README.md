@@ -30,11 +30,11 @@
 
 
 ## Contact
-  ● 김승한: rlatmdgks4@khu.ac.kr
-  ● 김태오:
-  ● 곽도훈:
-  ● 박민영:
-  ● 홍민기:
+  ● 김승한: rlatmdgks4@khu.ac.kr  
+  ● 김태오:  
+  ● 곽도훈:  
+  ● 박민영:  
+  ● 홍민기:  
   ● Project Link: https://github.com/Teachable-Machine/OSS_Project
 
 
