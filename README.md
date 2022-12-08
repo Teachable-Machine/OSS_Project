@@ -22,9 +22,10 @@
 
 
 ## Getting Started
-  Backend: Node.js, Amazon EC2   
-  AI modeling: Teachable Machine   
-  Frontend: html5, css, 바닐라 js   
+1. node.js install
+2. git clone https://github.com/Teachable-Machine/OSS_Project
+3. `npm install`
+4. `node server.js`
 
 ## Usage
 ### 1.이미지 파일을 선택하여 업로드하거나 드래그한다.
