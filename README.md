@@ -13,7 +13,18 @@
   탈모에 대해 걱정이 많은 사람들을 위해 탈모의 진행정도를 보여주는 웹 페이지
 
 ## 구현 기술 스택 및 아키텍처
-![image](https://user-images.githubusercontent.com/81818317/206395573-6fe0d0b6-00b8-4ef1-96ea-e9526e16923e.png)
+<div align="center">
+  <h3>기술스택</h3>
+</div>
+
+![image](https://user-images.githubusercontent.com/81818317/206444184-866fd9b1-d60a-415b-b748-48a1ef14855a.png)
+
+<div align = "center">
+  <h3>아키텍처</h3>
+![image](https://user-images.githubusercontent.com/81818317/206444747-8d761c32-abbe-4a19-9265-6d537d56d9a3.png)
+
+
+
 
 ## Getting Started(installation)
   Backend: Node.js, Amazon EC2   
