@@ -29,7 +29,7 @@
 ![image](https://user-images.githubusercontent.com/81818317/206398640-c4b87c11-b837-4f87-a19a-7724c124eb29.png)
 ## 5. 상세결과 확인 
 ![image](https://user-images.githubusercontent.com/81818317/206398924-8acc7508-3c7e-4c7b-91b1-655d392b066a.png)
-<img src="[/uploads/1848994ad25765da30fa8ef3684c67bc/캡처.PNG](https://user-images.githubusercontent.com/81818317/206398924-8acc7508-3c7e-4c7b-91b1-655d392b066a.png)"  width="700" height="370">
+<img src="[![image](https://user-images.githubusercontent.com/81818317/206399866-fe303f06-b2e2-4989-b2e9-e1d82922626a.png))"  width="600" height="270">
 ![image](https://user-images.githubusercontent.com/81818317/206398944-64888288-5ad3-40c6-aefd-beed20ad32d4.png)
 
 
