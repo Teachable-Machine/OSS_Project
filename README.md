@@ -2,13 +2,11 @@
 
 ### Contents
 1. About The Project
-2. 핵심기능
-3. 사용법
-4. 구현 방법
-5. 목차5
-6. 목차6
-7. 목차7
-8. 목차8
+2. Getting started(installation)
+3. Usage
+4. 구현 기술 스택 및 아키텍처
+5. Contributing
+6. Contact
 
 
 ## About The Project
@@ -19,19 +17,16 @@
 
 
 
-## 사용법
+## Usage
 
 
-## 구현 방법
+## 구현 기술 스택 및 아키텍처
 
 
-## 목차5
+## Contributing
 
 
-## 목차6
+## Contact
 
 
-## 목차7
 
-
-## 목차8
