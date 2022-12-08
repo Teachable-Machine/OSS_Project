@@ -22,6 +22,8 @@
 
 
 ## 구현 기술 스택 및 아키텍처
+![image](https://user-images.githubusercontent.com/81818317/206395573-6fe0d0b6-00b8-4ef1-96ea-e9526e16923e.png)
+
 
 
 ## Contributing
@@ -33,6 +35,6 @@
   ● 곽도훈:
   ● 박민영:
   ● 홍민기:
-  ● Project Link: https://github.com/Teachable-Machine/OSS_Project/edit/main/README.md
+  ● Project Link: https://github.com/Teachable-Machine/OSS_Project
 
 
