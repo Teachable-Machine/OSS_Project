@@ -29,7 +29,7 @@
 ![image](https://user-images.githubusercontent.com/81818317/206398640-c4b87c11-b837-4f87-a19a-7724c124eb29.png)
 ## 5. 상세결과 확인 
 <div>
-<img width = "300" src="https://user-images.githubusercontent.com/81818317/206400906-76e15fae-6e8e-4e5e-aaf7-1bd45f28922f.png">
+<img width = "300" src="https://user-images.githubusercontent.com/81818317/206401990-a65ed045-798c-4f3f-8614-ec255329af37.png">
 <img width = "300" src="https://user-images.githubusercontent.com/81818317/206400947-a8bf89e9-5ad9-4e1c-8c19-559400130561.png">
 </div>
 
