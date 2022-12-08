@@ -21,6 +21,7 @@
 
 <div align = "center">
   <h3>아키텍처</h3>
+</div>
 ![image](https://user-images.githubusercontent.com/81818317/206444747-8d761c32-abbe-4a19-9265-6d537d56d9a3.png)
 
 
