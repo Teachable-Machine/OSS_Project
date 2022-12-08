@@ -14,8 +14,9 @@
 
 
 ## Getting Started(installation)
-
-
+  Backend: Node.js, Amazon EC2 
+  AI modeling: Teachable Machine
+  Frontend: html5, css, 바닐라 js
 
 ## Usage
 
