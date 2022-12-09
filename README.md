@@ -55,8 +55,8 @@
 ## Contact
   ● 김승한: rlatmdgks4@khu.ac.kr  
   ● 김태오: ystc1247@khu.ac.kr   
-  ● 곽도훈:  
-  ● 박민영:  
+  ● 곽도훈: eldeshue@khu.ac.kr 
+  ● 박민영: pmy0792@khu.ac.kr 
   ● 홍민기: mario201@khu.ac.kr   
   ● Project Link: https://github.com/Teachable-Machine/OSS_Project
 
