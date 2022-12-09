@@ -24,7 +24,11 @@
 ## Getting Started
 1. node.js install
 2. git clone https://github.com/Teachable-Machine/OSS_Project
-3. `npm install`
+3. Install dependencies
+```
+npm install express
+npm install express-fileupload
+```
 4. `node server.js`
 
 ## Usage
